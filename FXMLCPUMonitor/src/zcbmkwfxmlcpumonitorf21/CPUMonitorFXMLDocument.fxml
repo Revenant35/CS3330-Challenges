@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zcbmkwfxmlcpumonitorf21.FXMLDocumentController">
+   <children>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="276.0" spacing="10.0">
+         <children>
+            <StackPane prefHeight="236.0" prefWidth="276.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="1.4" scaleY="1.4">
+                     <image>
+                        <Image url="@mygauge.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="handImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="195.0" scaleX="1.4" scaleY="1.4">
+                     <image>
+                        <Image url="@hand.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <Text fx:id="currentCPUText" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00%">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="276.0" spacing="25.0">
+               <children>
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#handleB1" text="Start">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#handleB2" text="Record">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="79.0" prefWidth="183.0">
+                     <children>
+                        <Label alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="181.0" text="Peak CPU Usage:">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="182.0" text="Mean CPU Usage:">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="93.0" prefWidth="98.0">
+                           <children>
+                              <Text fx:id="peakCPUText" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00%" wrappingWidth="97.03515625">
+                                 <font>
+                                    <Font name="Calibri" size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="meanCPUText" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00%" wrappingWidth="97.03515625">
+                                 <font>
+                                    <Font name="Calibri" size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="graphBox" layoutX="310.0" layoutY="14.0" prefHeight="373.0" prefWidth="276.0">
+         <children>
+            <AreaChart fx:id="areaChart" title="Mean CPU Usage" titleSide="BOTTOM">
+              <xAxis>
+                <CategoryAxis fx:id="areaChartXAxis" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="areaChartYAxis" autoRanging="false" label="CPU Usage (%)" side="LEFT" />
+              </yAxis>
+            </AreaChart>
+            <LineChart fx:id="lineChart" title="CPU Usage" titleSide="BOTTOM">
+              <xAxis>
+                <CategoryAxis fx:id="lineChartXAxis" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="lineChartYAxis" autoRanging="false" label="CPU Usage (%)" side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

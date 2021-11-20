@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ZcbmkwTimerStopwatchF21.jnlp">
+  <information>
+    <title>ZcbmkwTimerStopwatchF21</title>
+    <vendor>bbrow</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ZcbmkwTimerStopwatchF21.jar" size="55309" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ZcbmkwTimerStopwatchF21" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="zcbmkwtimerstopwatchf21.ZcbmkwTimerStopwatchF21"  name="ZcbmkwTimerStopwatchF21" />
+  <update check="always"/>
+</jnlp>
