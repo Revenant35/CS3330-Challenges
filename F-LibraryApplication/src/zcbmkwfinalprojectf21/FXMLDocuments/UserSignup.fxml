@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #796C51;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zcbmkwfinalprojectf21.FXMLControllers.UserSignupController">
+    <children>
+      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="800.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/signinImage.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: #E47F58;">
+               <children>
+                  <Label text="New User" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="380.0" spacing="25.0" style="-fx-background-color: #E3997C;">
+                     <children>
+                        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <JFXTextField fx:id="firstnameField" focusColor="BLACK" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="25.0" prefWidth="175.0" promptText="First Name" />
+                              <JFXTextField fx:id="lastnameField" focusColor="BLACK" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="175.0" promptText="Last Name" />
+                           </children>
+                        </HBox>
+                        <JFXTextField fx:id="usernameField" focusColor="BLACK" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="260.0" promptText="Username" />
+                        <JFXPasswordField fx:id="passwordField" focusColor="BLACK" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="360.0" promptText="Password" />
+                        <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleSignupButton" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E47F58;" text="Sign up" />
+                        <Label fx:id="userAlreadyExists" text="User Already Exists" textFill="#2e00ff" visible="false" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="2.0">
+                     <children>
+                        <Label text="Existing user?" textFill="WHITE" />
+                        <JFXButton onAction="#handleSigninButton" prefWidth="150.0" style="-fx-background-color: #E3997C;" text="Sign in" />
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="20.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

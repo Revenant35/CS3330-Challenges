@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #796C51;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zcbmkwfinalprojectf21.FXMLControllers.MainMenuController">
+   <children>
+      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="800.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/stockLibraryImage-Cropped.jpg" />
+               </image>
+            </ImageView>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0" spacing="10.0">
+               <children>
+                  <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="390.0">
+                     <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.6" prefHeight="480.0" prefWidth="380.0" style="-fx-background-color: #796B5D;" />
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="480.0" prefWidth="380.0" spacing="20.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" prefHeight="53.0" prefWidth="381.0" text="Welcome to the Library" textFill="WHITE">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                    <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleBrowseButtonAction" text="Browse our selection" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                    <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleReturnBookMenuButtonAction" text="Return a book" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                    <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleViewCartButtonAction" text="View your cart" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                    <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleDonateBookButtonAction" text="Donate a book" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                          <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleAboutButtonAction" text="About" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                          <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleExitApplicationButtonAction" text="Exit" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="390.0">
+                     <children>
+                        <VBox fx:id="listContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="390.0" spacing="10.0" visible="false">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.6" prefHeight="30.0" prefWidth="380.0" style="-fx-background-color: #796B5D;" />
+                                    <JFXTextField fx:id="searchBar" focusColor="BLACK" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="370.0" promptText="Search for a book" unFocusColor="TRANSPARENT" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="5.0" />
+                                 </VBox.margin>
+                              </StackPane>
+                              <JFXListView fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.6" prefHeight="380.0" prefWidth="380.0" style="-fx-background-color: #796B5D;" />
+                              <StackPane prefHeight="150.0" prefWidth="380.0">
+                                 <children>
+                                    <AnchorPane opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #796B5D;" />
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="380.0" spacing="5.0">
+                                       <children>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <StackPane fx:id="returnBookPane" prefHeight="150.0" prefWidth="200.0" visible="false">
+                                                         <children>
+                                                            <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleReturnBookButtonAction" text="Return this Book" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </StackPane>
+                                                      <StackPane fx:id="addToCartPane" prefHeight="150.0" prefWidth="200.0" visible="false">
+                                                         <children>
+                                                            <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleAddToCartButtonAction" text="Add to Cart" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </StackPane>
+                                                   </children>
+                                                </StackPane>
+                                                <HBox fx:id="cartManipulationHBox" prefHeight="100.0" prefWidth="200.0" spacing="5.0" visible="false">
+                                                   <children>
+                                                      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0">
+                                                         <children>
+                                                            <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleCheckOutButtonAction" text="Check Out" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </StackPane>
+                                                      <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                         <children>
+                                                            <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                            <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleRemoveFromCartButtonAction" text="Remove from Cart" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </StackPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleCloseListButtonAction" text="Close" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <StackPane fx:id="aboutContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="390.0" visible="false">
+                           <children>
+                              <AnchorPane opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #796B5D;">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </AnchorPane>
+                              <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="360.0">
+                                 <children>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="350.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/Zach.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="180.0" prefWidth="180.0">
+                                             <children>
+                                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="About Me" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_LEFT" prefHeight="135.0" prefWidth="169.0" text="My name is Zach Brown and I have worked with computers all my life." textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Label alignment="TOP_CENTER" prefHeight="147.0" prefWidth="370.0" text="I have only really gotten into programming over the past few years and I am never turning back. Since I began coding, I have found that I love the problem solving and complex solutions that come with it. " textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="89.0" prefWidth="380.0" />
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="380.0">
+                                       <children>
+                                          <Label text="Phone:  +1 (816) 351-5125" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="380.0" spacing="10.0">
+                                       <children>
+                                          <Label text="Email:  bbrown64506@gmail.com" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                        <StackPane fx:id="donationContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="390.0" visible="false">
+                           <children>
+                              <AnchorPane opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #796B5D;">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </AnchorPane>
+                              <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="380.0" spacing="40.0">
+                                 <children>
+                                    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Book Donation" textFill="WHITE">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="donationTitle" focusColor="BLACK" promptText="Title" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="donationAuthor" focusColor="BLACK" promptText="Author" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="donationDate" focusColor="BLACK" promptText="Date (mm/dd/yyyyy)" unFocusColor="BLACK">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <AnchorPane prefHeight="59.0" prefWidth="370.0" />
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="380.0" spacing="10.0">
+                                       <children>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleSubmitDonationButtonAction" text="Submit" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <AnchorPane opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #70502F;" />
+                                                <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleCloseListButtonAction" text="Close" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

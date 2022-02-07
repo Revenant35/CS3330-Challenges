@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #796C51;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zcbmkwfinalprojectf21.FXMLControllers.UserSigninController">
+   <children>
+      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="800.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/signinImage.jpg" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="400.0" spacing="20.0">
+                     <children>
+                        <Label text="Welcome to the library" textFill="WHITE">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label text="We have everything you need to get started on your next adventure. To get started with us:" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleSignupButton" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #E47F58;" text="Sign up for free" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="264.0" prefWidth="390.0" spacing="10.0" style="-fx-background-color: #E47F58;">
+                           <children>
+                              <Label text="Member Login" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="380.0" spacing="25.0" style="-fx-background-color: #E3997C;">
+                                 <children>
+                                    <JFXTextField fx:id="usernameField" focusColor="BLACK" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="260.0" promptText="Username" />
+                                    <JFXPasswordField fx:id="passwordField" focusColor="BLACK" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="360.0" promptText="Password" />
+                                    <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleSigninButton" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E47F58;" text="Sign in" />
+                                    <Label fx:id="incorrectUserInfo" prefHeight="18.0" prefWidth="218.0" text="Invalid Username/Password Combination" textFill="#3805ff" visible="false" wrapText="true" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="110.0" left="5.0" right="5.0" top="110.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
